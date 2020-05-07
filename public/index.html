@@ -5,11 +5,7 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -24,7 +20,128 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="%PUBLIC_URL%/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="%PUBLIC_URL%/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="%PUBLIC_URL%/favicon-16x16.png"
+    />
+
+    <!-- Primary Meta Tags -->
+    <title>SharedList - Quickest way to share lists with anyone</title>
+    <meta
+      name="title"
+      content="SharedList - Quickest way to share lists with anyone"
+    />
+    <meta
+      name="description"
+      content="Create and share lists without signin or signup"
+    />
+    <meta
+      name="keywords"
+      content="create,share,list,open,task,todo,to-do,tasks,lists"
+    />
+
+    <!-- Font Preloading -->
+    <!-- Only 3 added because only these 3 are being used. Thin, Regular and Light fonts should be added as needed -->
+    <link
+      rel="preload"
+      importance="low"
+      href="%PUBLIC_URL%/fonts/Archia/archia-semibold-webfont.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      importance="low"
+      href="%PUBLIC_URL%/fonts/Archia/archia-medium-webfont.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      importance="low"
+      href="%PUBLIC_URL%/fonts/Archia/archia-bold-webfont.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      /* font-face declarations for preloaded fonts */
+      /* These are the only 3 fonts being used.
+            font-face declarations for thin, regular and light fonts should be added as needed */
+      @font-face {
+        font-family: 'Archia';
+        src: url('%PUBLIC_URL%/fonts/Archia/archia-semibold-webfont.woff2')
+            format('woff2'),
+          url('/fonts/Archia/archia-semibold-webfont.woff') format('woff');
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'Archia';
+        src: url('%PUBLIC_URL%/fonts/Archia/archia-medium-webfont.woff2')
+            format('woff2'),
+          url('%PUBLIC_URL%/fonts/Archia/archia-medium-webfont.woff')
+            format('woff');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'Archia';
+        src: url('%PUBLIC_URL%/fonts/Archia/archia-bold-webfont.woff2')
+            format('woff2'),
+          url('%PUBLIC_URL%/fonts/Archia/archia-bold-webfont.woff')
+            format('woff');
+        font-weight: 900;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sharedlist.netlify.com" />
+    <meta
+      property="og:title"
+      content="SharedList - Quickest way to share lists with anyone"
+    />
+    <meta
+      property="og:description"
+      content="Create and share lists with anyone without signin or signup"
+    />
+    <meta property="og:image" content="%PUBLIC_URL%/android-chrome-512x512.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://sharedlist.netlify.com" />
+    <meta property="twitter:title" content="SharedList - Quickest way to share lists with anyone" />
+    <meta
+      property="twitter:description"
+      content="Create and share lists with anyone without signin or signup"
+    />
+    <meta property="twitter:image" content="%PUBLIC_URL%/android-chrome-512x512.png" />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
