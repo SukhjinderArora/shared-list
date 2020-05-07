@@ -5,24 +5,25 @@ module.exports = {
     jest: true,
   },
   extends: [
-    "react-app",
-    "airbnb",
-    "airbnb/hooks",
-    "plugin:prettier/recommended",
+    'react-app',
+    'airbnb',
+    'airbnb/hooks',
+    'plugin:testing-library/react',
+    'plugin:prettier/recommended',
   ],
-  plugins: ["react"],
+  plugins: ['react', 'testing-library'],
   parserOptions: {
     ecmaVersion: 2018,
-    sourceType: "module",
+    sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
     },
   },
   rules: {
-    "react/jsx-filename-extension": [
+    'react/jsx-filename-extension': [
       1,
       {
-        extensions: [".js", ".jsx"],
+        extensions: ['.js', '.jsx'],
       },
     ],
   },
