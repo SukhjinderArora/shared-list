@@ -1,3 +1,3 @@
 # SharedList
 
-Create and share lists without signin or signup.
+Create and share lists with anyone without signin or signup
