@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="minimum-scale=1, initial-scale=1, width=device-width"
+    />
     <meta name="theme-color" content="#000000" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
     <!--
@@ -52,7 +55,6 @@
       name="keywords"
       content="create,share,list,open,task,todo,to-do,tasks,lists"
     />
-
     <!-- Font Preloading -->
     <!-- Only 3 added because only these 3 are being used. Thin, Regular and Light fonts should be added as needed -->
     <link
@@ -86,7 +88,8 @@
             font-face declarations for thin, regular and light fonts should be added as needed */
       @font-face {
         font-family: 'Archia';
-        src: url('%PUBLIC_URL%/fonts/Archia/archia-semibold-webfont.woff2')
+        src: local('Archia'),
+          url('%PUBLIC_URL%/fonts/Archia/archia-semibold-webfont.woff2')
             format('woff2'),
           url('/fonts/Archia/archia-semibold-webfont.woff') format('woff');
         font-weight: 600;
@@ -96,7 +99,8 @@
 
       @font-face {
         font-family: 'Archia';
-        src: url('%PUBLIC_URL%/fonts/Archia/archia-medium-webfont.woff2')
+        src: local('Archia'),
+          url('%PUBLIC_URL%/fonts/Archia/archia-medium-webfont.woff2')
             format('woff2'),
           url('%PUBLIC_URL%/fonts/Archia/archia-medium-webfont.woff')
             format('woff');
@@ -107,7 +111,8 @@
 
       @font-face {
         font-family: 'Archia';
-        src: url('%PUBLIC_URL%/fonts/Archia/archia-bold-webfont.woff2')
+        src: local('Archia'),
+          url('%PUBLIC_URL%/fonts/Archia/archia-bold-webfont.woff2')
             format('woff2'),
           url('%PUBLIC_URL%/fonts/Archia/archia-bold-webfont.woff')
             format('woff');
@@ -128,7 +133,10 @@
       property="og:description"
       content="Create and share lists with anyone without signin or signup"
     />
-    <meta property="og:image" content="%PUBLIC_URL%/android-chrome-512x512.png" />
+    <meta
+      property="og:image"
+      content="%PUBLIC_URL%/android-chrome-512x512.png"
+    />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="512" />
     <meta property="og:image:height" content="512" />
@@ -136,12 +144,18 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://sharedlist.netlify.com" />
-    <meta property="twitter:title" content="SharedList - Quickest way to share lists with anyone" />
+    <meta
+      property="twitter:title"
+      content="SharedList - Quickest way to share lists with anyone"
+    />
     <meta
       property="twitter:description"
       content="Create and share lists with anyone without signin or signup"
     />
-    <meta property="twitter:image" content="%PUBLIC_URL%/android-chrome-512x512.png" />
+    <meta
+      property="twitter:image"
+      content="%PUBLIC_URL%/android-chrome-512x512.png"
+    />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
