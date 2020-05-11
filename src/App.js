@@ -12,17 +12,19 @@ import OpenList from './components/OpenList';
 import CreateList from './components/CreateList';
 
 function App() {
-  // eslint-disable-next-line no-unused-vars
-  const [prefersDarkMode, setDarkModePreference] = useState(false);
+  const [prefersDarkMode, setDarkMode] = useState(true);
   const theme = React.useMemo(
     () => createMuiTheme(prefersDarkMode ? dark : light),
     [prefersDarkMode]
   );
+  const changeTheme = () => {
+    setDarkMode(!prefersDarkMode);
+  };
   return (
     <>
       <ThemeProvider theme={theme}>
         <CssBaseline>
-          <Layout>
+          <Layout changeTheme={changeTheme}>
             <Switch>
               <Route path="/open">
                 <OpenList />
